@@ -17,7 +17,7 @@ public class ContaBancaria {
 
     public void sacar(double valor) {
         if (valor <= saldo) {
-            saldo -= valor; // 👈 corrigido aqui!
+            saldo -= valor; //  corrigido aqui!
             System.out.printf("Saque de R$ %.2f realizado.\n", valor);
         } else {
             System.out.println("Saldo Insuficiente.\n");
@@ -37,13 +37,13 @@ public class ContaBancaria {
 
         boolean executando = true;
 
-        while (executando) { // 👈 com chaves!
+        while (executando) { //  com chaves!
             System.out.println("\nEscolha uma opção:");
             System.out.println("1 - Depositar");
             System.out.println("2 - Sacar");
             System.out.println("3 - Exibir saldo");
             System.out.println("0 - Sair");
-            System.out.print("Opção: "); // 👈 print sem quebra de linha
+            System.out.print("Opção: "); //  print sem quebra de linha
 
             int opcao = scanner.nextInt();
 
