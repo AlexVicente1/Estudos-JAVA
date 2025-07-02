@@ -39,7 +39,8 @@ public class controleEstoque {
             new Produto("Bermuda Java"),
             new Produto("Cueca Java"),
             new Produto("Meia Java"),
-            new Produto("Blusa Java")
+            new Produto("Blusa Java"),
+            new Produto("Calça Java")
         };
 
         System.out.println("=== Sistema de Controle de Estoque ===");
