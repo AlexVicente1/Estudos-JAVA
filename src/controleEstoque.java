@@ -39,7 +39,7 @@ public class controleEstoque {
             new Produto("Bermuda Java"),
             new Produto("Cueca Java"),
             new Produto("Meia Java"),
-            new Produto("Blusa Java"),
+            new Produto("Moleton Java"),
             new Produto("Calça Java")
         };
 
