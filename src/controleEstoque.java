@@ -34,13 +34,13 @@ class Produto {
 public class controleEstoque {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Produto[] produtos = {
-            new Produto("Camisa Java"),
-            new Produto("Bermuda Java"),
-            new Produto("Cueca Java"),
-            new Produto("Meia Java"),
-            new Produto("Moleton Java"),
-            new Produto("Calça Java")
+        Produto[] produtos = new Produto[]{
+                new Produto("Camisa Java"),
+                new Produto("Bermuda Java"),
+                new Produto("Cueca Java"),
+                new Produto("Meia Java"),
+                new Produto("Moleton Java"),
+                new Produto("Calça Java")
         };
 
         System.out.println("=== Sistema de Controle de Estoque ===");
