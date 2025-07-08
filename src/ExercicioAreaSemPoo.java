@@ -2,11 +2,16 @@ import java.util.Scanner;
 
 public class ExercicioAreaSemPoo {
 
-    // Classe interna
+    // Classe interna COM metodo de area! Mas eu coloquei ela aqui de novo pra fica mais uniforme! Mas da pra criar uma subclasse e importar ela também!
     public static class TrianguloPoo {
         public double a;
         public double b;
         public double c;
+
+        public double area() {
+            double p = (a + b + c) / 2.0;
+            return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        }
     }
 
     public static void main(String[] args) {
@@ -26,11 +31,8 @@ public class ExercicioAreaSemPoo {
         y.b = scanner.nextDouble();
         y.c = scanner.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Área do triângulo X: %.4f%n", areaX);
         System.out.printf("Área do triângulo Y: %.4f%n", areaY);
